@@ -38,7 +38,7 @@ english_text = st.text_area(
 # -----------------------------
 @st.cache_resource(show_spinner=True)
 def load_model():
-    model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"  # Free, open-source
+    model_name = "TheBloke/TinyLlama-200M-GPTQ"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
